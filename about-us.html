@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<title>О нас</title>
+</head>
+<body>
+	
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<a href="index.html">
+						<img src="img/logo-white.png" alt="Distribune" class="header__logo-white">
+						<img src="img/logo.png" alt="Distribune" class="header__logo-black">
+					</a>
+				</div>
+				<div class="header__right" id="burgerInner">
+					<nav class="nav">
+						<a href="webmasters.html" class="nav__link">Вебмастерам</a>
+						<a href="bloggers.html" class="nav__link">Блогерам</a>
+						<a href="about-us.html" class="nav__link">О нас</a>
+					</nav>
+					<div class="header__login">
+						<button href="#" class="btn btn-login" id="loginBtn">логин</button>
+					</div>
+					
+				</div>
+				<div class="burger-menu">
+					<a href="#" class="burger" id="burgerButton">
+						<span class="burger__lines">Menu</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Popup -->
+	<div class="login-popup">
+		
+		<div class="pop-up__window">
+			
+			<button class="close-btn" id="closeBtn"></button>
+			<!-- Регистрация -->
+			<div class="pop-up__reg">
+				<div class="pop-up__top">
+					<div class="pop-up__top-left">Регистрация</div>
+					<div class="pop-up__top-right"><a href="#" id="showSignIn">Вход</a></div>
+				</div>
+				<div class="reg__form">
+					<form action="" method="post">
+						<input type="text" class="form__input" placeholder="Ваше имя">
+						<input type="email" class="form__input" placeholder="Ваш e-mail">
+						<input type="tel" class="form__input" placeholder="Ваш телефон">
+						<select name="" id="reg" class="form__input form__select">
+							<option class="form__option form__option-disabled" value="" disabled selected>Выберите <span class="opacity5">(блогер или вебмастер)</span></option>
+							<option class="form__option" value="bloger">Блогер</option>
+							<option class="form__option" value="webmaster">Вебмастер</option>
+						</select>
+						<button class="login__btn btn" type="submit">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Вход -->
+			<div class="pop-up__signin show">
+				<div class="pop-up__top">
+					<div class="pop-up__top-left">Вход</div>
+					<div class="pop-up__top-right"><a href="#" id="showReg">Регистрация</a></div>
+				</div>
+				<div class="signin__form">
+					<form action="" method="post">
+						<input type="text" class="form__input" placeholder="Ваше имя">
+						<input type="password" name="" id="pass" class="form__input" placeholder="Ваш пароль">
+						<button class="login__btn btn" type="submit">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div><!-- //Popup -->
+
+
+
+    <section class="intro-au" id="intro">
+		Texttexttext
+    </section>
+
+
+	
+	<section class="section section-au">
+		<div class="container">
+			
+			<div class="onas">
+				<h3 class="block__title block__title-onas">О нас</h3>
+				<div class="onas__text">
+					<p class="onas__paragraph">
+						Текст о компании (он же “о фирме”, он же “о нас”, он же “о предприятии” и т.д.) чем-то по своей сути напоминает японскую ядовитую рыбу фугу. Стоит его чуть-чуть “передержать”, и вместо вызова доверия и расположения к себе читателя, материал начинает отталкивать и вызывать отвращение. А виной тому тонкости человеческой психологии. Только их мало кто учитывает. Кстати, говорят, что раньше повар, который неправильно приготовил рыбу фугу, должен был сам ее съесть. Интересно, как бы это смотрелось в сфере копирайтинга… Написал текст с обратным эффектом — изволь разместить его у себя на сайте. На самом видном месте. Пущай все смотрят!
+					</p>
+					<p class="onas__paragraph">
+						Это я, конечно, утрирую. И смех смехом, но на большинстве сайтов тексты о компании можно свести к трем предложениям: “Мы очень классные, давно на рынке, клиентоориентированные и надежные. Лучше нас никого нет. Заказывайте у нас!”. Другими словами, эти тексты представляют собой, знаете, эдакую эпическую оду, каждое слово которой — сладкий мед. Даже слишком сладкий. Приторный. Особенно этим грешит средний бизнес, руководство которого аж млеет от фраз вроде “…делая акцент на клиентоориентированности, инновационных технологиях и индивидуальных решениях для бизнеса клиента…”
+					</p>
+				</div>
+			</div>
+
+			<div class="ask">
+				<div class="ask__contacts">
+					<div class="contact__line">
+						<img src="img/about-us/marker-icon.png" class="au__marker-icon" alt="">г. Киев, ул Киевская 325/2
+					</div>
+					<div class="contact__line">
+						<img src="img/about-us/iphone-icon.png" class="au__iphone-icon" alt=""> <a href="tel:+80976559812">8 (097) 655-98-12</a>
+					</div>
+					<div class="contact__line">
+						<img src="img/about-us/mail-icon.png" alt=""> <a href="mailto:info_distribune@mail">info_distribune@mail</a>
+					</div>
+
+				</div>
+
+				<div class="ask__form">
+					<h3 class="block__title block__title-contact">Остались вопросы?</h3>
+					<h6 class="block__subtitle">Задайте их нам и мы ответим в ближайшее время.</h6>
+					<div class="cont__form">
+						<form class="form" action="mail.php" method="post">
+
+							<!-- Hidden fields -->
+							<input type="hidden" name="project_name" value="Distribune.com">
+							<input type="hidden" name="admin_email" value="your-email@test.gg"> <!-- Value: Admin Email -->
+							<input type="hidden" name="form_subject" value="Вопрос от пользователя Distribune">
+							<!-- /Hidden fields -->
+
+							<div class="form__left">
+								<input type="text" class="form__input form__input-au" name="Name" id="username" placeholder="Ваше имя" required>
+								<input type="email" class="form__input form__input-au" name="Email" id="useremail" placeholder="Ваш email" required>
+								<select name="Select" id="cont" class="form__input form__input-au form__select">
+									<option class="form__option form__option-disabled" value="" disabled selected>Выберите (блогер или вебмастер)</option>
+									<option class="form__option" value="bloger">Блогер</option>
+									<option class="form__option" value="webmaster">Вебмастер</option>
+								</select>
+							</div>
+							<textarea name="Message" id="message" cols="25" rows="10" class="form__input form__input-au form__textarea" placeholder="Ваш вопрос"></textarea>
+							<button type="submit" class="btn form-btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__left">
+					<a href="#" class="footer__logo">
+						<img src="img/logo-white.png" alt="Distribune">
+					</a>
+					<p class="copyright">Все права защищены © 2016</p>
+				</div>
+
+
+				<div class="footer__links">
+					<div class="footer__nav">
+						<a href="webmasters.html">Вебмастерам</a>
+						<a href="bloggers.html">Блогерам</a>
+						<a href="about-us.html">О нас</a>
+					</div>
+
+					<div class="footer__policy">
+						<a href="#">Политика конфидециальности</a>
+						<a href="#">Партнерское соглашение</a>
+					</div>
+				</div>
+
+
+				<div class="footer__right">
+					<div class="contact__point">
+						<img src="img/tel-icon.png" alt=""> <a href="tel:+80976559812">8 (097) 655-98-12</a>
+					</div>
+
+					<div class="contact__point">
+						<img src="img/email-icon-orange.png" alt=""> <a href="mailto:info_distribune@mail">info_distribune@mail</a>
+					</div>
+
+					<div class="contact__point">
+						<img src="img/marker-icon.png" alt=""> <span>г. Киев, ул Киевская 325/2</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="libs/jquery-3.4.1.min.js"></script>
+	<title>Блогерам</title>
+</head>
+<body>
+	
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__inner">
+				<div class="header__logo">
+					<a href="index.html">
+						<img src="img/logo-white.png" alt="Distribune" class="header__logo-white">
+						<img src="img/logo.png" alt="Distribune" class="header__logo-black">
+					</a>
+				</div>
+				<div class="header__right" id="burgerInner">
+					<nav class="nav">
+						<a href="webmasters.html" class="nav__link">Вебмастерам</a>
+						<a href="bloggers.html" class="nav__link">Блогерам</a>
+						<a href="about-us.html" class="nav__link">О нас</a>
+					</nav>
+					<div class="header__login">
+						<button href="#" class="btn btn-login" id="loginBtn">логин</button>
+					</div>
+					
+				</div>
+				<div class="burger-menu">
+					<a href="#" class="burger" id="burgerButton">
+						<span class="burger__lines">Menu</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Popup -->
+	<div class="login-popup">
+		
+		<div class="pop-up__window">
+			
+			<button class="close-btn" id="closeBtn"></button>
+			<!-- Регистрация -->
+			<div class="pop-up__reg">
+				<div class="pop-up__top">
+					<div class="pop-up__top-left">Регистрация</div>
+					<div class="pop-up__top-right"><a href="#" id="showSignIn">Вход</a></div>
+				</div>
+				<div class="reg__form">
+					<form action="" method="post">
+						<input type="text" class="form__input" placeholder="Ваше имя">
+						<input type="email" class="form__input" placeholder="Ваш e-mail">
+						<input type="tel" class="form__input" placeholder="Ваш телефон">
+						<select name="" id="reg" class="form__input form__select">
+							<option class="form__option form__option-disabled" value="" disabled selected>Выберите <span class="opacity5">(блогер или вебмастер)</span></option>
+							<option class="form__option" value="bloger">Блогер</option>
+							<option class="form__option" value="webmaster">Вебмастер</option>
+						</select>
+						<button class="login__btn btn" type="submit">Зарегистрироваться</button>
+					</form>
+				</div>
+			</div>
+
+			<!-- Вход -->
+			<div class="pop-up__signin show">
+				<div class="pop-up__top">
+					<div class="pop-up__top-left">Вход</div>
+					<div class="pop-up__top-right"><a href="#" id="showReg">Регистрация</a></div>
+				</div>
+				<div class="signin__form">
+					<form action="" method="post">
+						<input type="text" class="form__input" placeholder="Ваше имя">
+						<input type="password" name="" id="pass" class="form__input" placeholder="Ваш пароль">
+						<button class="login__btn btn" type="submit">Войти</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div><!-- //Popup -->
+
+	<section class="intro intro-bloggers" id="intro">
+		<div class="container">
+			<div class="intro__inner">
+				<h1 class="intro__title">Distribune.com</h1>
+				<p class="intro__text">
+					Уникальная платформа для популяризации и дополнительной монетизации вашего видеоконтента
+				</p>
+				<div class="intro__mouse">
+					<img src="img/mouse.png" alt="" class="mouse">
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+	<section class="section section-bloggers">
+		<div class="container">
+			<!-- Как это работает -->
+			<div class="how-it-works">
+				<h3 class="block__title">Как это работает</h3>
+				<div class="hiw__inner hiw__inner-four">
+					<div class="hiw__item">
+						<div class="hiw__pic">
+							<img src="img/why-1.png" alt="">
+							<span>1</span>
+						</div>
+						<div class="hiw__text">
+							Вы предоставляете нам видеоконтент 
+						</div>
+					</div>
+
+					<div class="hiw__item">
+						<div class="hiw__pic">
+							<img src="img/why-4.png" alt="">
+							<span>2</span>
+						</div>
+						<div class="hiw__text">
+							Мы встраиваем его в свой плеер
+						</div>
+					</div>
+
+					<div class="hiw__item">
+						<div class="hiw__pic">
+							<img src="img/why-6.png" alt="">
+							<span>3</span>
+						</div>
+						<div class="hiw__text">
+							Тысячи наших сайтов партнёров публикуют видео у себя на сайте
+						</div>
+					</div>
+
+					<div class="hiw__item">
+						<div class="hiw__pic">
+							<img src="img/why-7.png" alt="">
+							<span>4</span>
+						</div>
+						<div class="hiw__text">
+							Вы получаете дополнительные просмотры и новых подписчиков
+						</div>
+					</div>
+
+					
+				</div>
+			</div><!-- Конец Как это работает -->
+
+            <!-- Преимущества -->
+            <div class="advantages">
+                <h3 class="block__title">Преимущества работы с нами</h3>
+                <div class="adv__inner">
+                    <div class="adv__item">
+                        <div class="adv__pic">
+                            <img src="img/bloggers/preim-1.png" alt="">
+                        </div>
+                        <div class="preim__text">
+                            Дополнительные <br> просмотры
+                        </div>
+                    </div>
+
+                    <div class="adv__item">
+                        <div class="adv__pic">
+                            <img src="img/bloggers/preim-2.png" alt="">
+                        </div>
+                        <div class="preim__text">
+                            Прирост подписчиков на ютюб
+                        </div>
+                    </div>
+
+                    <div class="adv__item">
+                        <div class="adv__pic">
+                            <img src="img/bloggers/preim-3.png" alt="">
+                        </div>
+                        <div class="preim__text">
+                            Рост цен на рекламные интеграции
+                        </div>
+                    </div>
+
+                    <div class="adv__item">
+                        <div class="adv__pic">
+                            <img src="img/bloggers/preim-4.png" alt="">
+                        </div>
+                        <div class="preim__text">
+                            Дополнительная монети-<br>зация вашего контента
+                        </div>
+                    </div>
+
+                    <div class="adv__item">
+                        <div class="adv__pic">
+                            <img src="img/bloggers/preim-5.png" alt="">
+                        </div>
+                        <div class="preim__text">
+                            Мы предоставляем аналитику по показам ваших видео у нас в сервисе
+                        </div>
+                    </div>
+                </div>
+                <div class="adv__outer">
+                    В нашем плеере предусмотрена иконка со ссылкой перехода на <span class="orange">ваш youtube</span> канал!
+                    <img src="img/bloggers/adv-yt.png" alt="">
+                </div>
+            </div>
+
+            <!-- Кейсы -->
+            <div class="cases">
+                <div class="block__title">Кейсы</div>
+                <div class="cases__inner">
+                    <div class="cases__item">
+                        <img src="img/bloggers/cases-yt.png" alt="" class="cases__imgtop">
+                        <div class="case__info">
+                            <div class="case__info-item">
+                                <span class="info-item__point">Дополнительные просмотры видео:</span>
+                                <p class="info-item__number">3 213 123</p>
+                            </div>
+                            <div class="case__info-item">
+                                <span class="info-item__point">Дополнительные просмотры видео:</span>
+                                <p class="info-item__number">+3%</p>
+                            </div>
+
+                            <div class="case__info-item">
+                                <span class="info-item__point">Стоимость интеграции:</span>
+                                <p class="info-item__number">+3%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cases__item">
+                        <img src="img/bloggers/cases-yt.png" alt="" class="cases__imgtop">
+                        <div class="case__info">
+                            <div class="case__info-item">
+                                <span class="info-item__point">Дополнительные просмотры видео:</span>
+                                <p class="info-item__number">3 213 123</p>
+                            </div>
+                            <div class="case__info-item">
+                                <span class="info-item__point">Дополнительные просмотры видео:</span>
+                                <p class="info-item__number">+3%</p>
+                            </div>
+
+                            <div class="case__info-item">
+                                <span class="info-item__point">Стоимость интеграции:</span>
+                                <p class="info-item__number">+3%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cases__item">
+                        <img src="img/bloggers/cases-yt.png" alt="" class="cases__imgtop">
+                        <div class="case__info">
+                            <div class="case__info-item">
+                                <span class="info-item__point">Дополнительные просмотры видео:</span>
+                                <p class="info-item__number">3 213 123</p>
+                            </div>
+                            <div class="case__info-item">
+                                <span class="info-item__point">Дополнительные просмотры видео:</span>
+                                <p class="info-item__number">+3%</p>
+                            </div>
+
+                            <div class="case__info-item">
+                                <span class="info-item__point">Стоимость интеграции:</span>
+                                <p class="info-item__number">+3%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			
+
+			<!-- Контакт -->
+			<div class="contact">
+				<h3 class="block__title block__title-contact">Остались вопросы?</h3>
+				<h6 class="block__subtitle">Задайте их нам и мы ответим в ближайшее время.</h6>
+				<div class="cont__form">
+					<form class="form" action="mail.php" method="post">
+						
+						<!-- Hidden fields -->
+                        <input type="hidden" name="project_name" value="Distribune.com">
+                        <input type="hidden" name="admin_email" value="your-email@test.gg"> <!-- Value: Admin Email -->
+                        <input type="hidden" name="form_subject" value="Вопрос от пользователя Distribune">
+                        <!-- /Hidden fields -->
+
+						<div class="form__left">
+							<input type="text" class="form__input" name="Name" id="username" placeholder="Ваше имя" required>
+							<input type="email" class="form__input" name="Email" id="useremail" placeholder="Ваш email" required>
+							<select name="Select" id="cont" class="form__input form__select">
+								<option class="form__option form__option-disabled" value="" disabled selected>Выберите (блогер или вебмастер)</option>
+								<option class="form__option" value="bloger">Блогер</option>
+								<option class="form__option" value="webmaster">Вебмастер</option>
+							</select>
+						</div>
+						<textarea name="Message" id="message" cols="25" rows="10" class="form__input form__textarea" placeholder="Ваш вопрос"></textarea>
+						<button type="submit" class="btn form-btn">Отправить</button>
+					</form>
+				</div>
+			</div><!-- Конец Контакт -->
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__left">
+					<a href="#" class="footer__logo">
+						<img src="img/logo-white.png" alt="Distribune">
+					</a>
+					<p class="copyright">Все права защищены © 2016</p>
+				</div>
+
+
+				<div class="footer__links">
+					<div class="footer__nav">
+						<a href="webmasters.html">Вебмастерам</a>
+						<a href="bloggers.html">Блогерам</a>
+						<a href="about-us.html">О нас</a>
+					</div>
+
+					<div class="footer__policy">
+						<a href="#">Политика конфидециальности</a>
+						<a href="#">Партнерское соглашение</a>
+					</div>
+				</div>
+
+
+				<div class="footer__right">
+					<div class="contact__point">
+						<img src="img/tel-icon.png" alt=""> <a href="tel:+80976559812">8 (097) 655-98-12</a>
+					</div>
+
+					<div class="contact__point">
+						<img src="img/email-icon-orange.png" alt=""> <a href="mailto:info_distribune@mail">info_distribune@mail</a>
+					</div>
+
+					<div class="contact__point">
+						<img src="img/marker-icon.png" alt=""> <span>г. Киев, ул Киевская 325/2</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+<script src="js/common.js"></script>
+</body>
+</html>
